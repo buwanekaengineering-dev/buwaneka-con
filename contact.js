@@ -36,7 +36,7 @@ module.exports = async function handler(req, res) {
   try {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: 'info@buwanekaec.com',
+      to: 'buwaneka.engineering@gmail.com',
       replyTo: safe(email),
       subject,
       text: body,
